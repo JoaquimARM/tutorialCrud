@@ -19,6 +19,15 @@
       <th scope="col" th:text=${usuario.getId()}>id</th>
       <th scope="col" th:text=${usuario.getNome()}>nome</th>
       <th scope="col" th:text=${usuario.getEmail()}>email</th>
+      <th>
+      	<button>Editar</button>
+      	<a th:href="@{/removerUsuario/{id} (id=${usuario.id})}">
+      		<button>Remover</button>
+      	</a>
+      	
+      </th>
+       
+      
     </tr>
   </thead>
 </table>
