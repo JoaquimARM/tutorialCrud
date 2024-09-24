@@ -10,6 +10,7 @@
 		<h1>cradasto de usario</h1>
 		<form th:action="@{/salvarUsuario}" th:object="${usuario}" method="post">
 		  <div class="mb-3">
+		  <input type="hidden" th:field="*{id}">
 		    <label for="exampleInputEmail1" class="form-label">Nome</label>
 		    <input type="text" class="form-control" id="nome" th:field="*{nome}">
 		
